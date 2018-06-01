@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tic Tac Toe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet"> 
+    <script src="tictactoe.js"></script>    
+    <script src="test.js"></script>    
+</head>
+<body>
+    
+    <!-- Show who the current active player is -->
+    <div class="activePlayer"></div>
+
+    <!-- Main game board -->   
+    <div class="game-area">
+        TIC-TAC-TOE
+        <table class="gameTable">
+            <tr>
+                <td value="0"></td><td value="1"></td><td value="2"></td>
+            </tr>
+            <tr>
+                <td value="3"></td><td value="4"></td> <td value="5"></td>
+            </tr>
+            <tr>
+                <td value="6"></td><td value="7"></td><td value="8"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Display player's selected side / icon for current game -->
+    <div class="status"></div>
+
+    <!-- Score tracking -->
+    <div class="scores">Current Score - 
+        <span class="playerOneIcon"></span>
+        : <b class="playerXScore"></b>  
+        <span class="playerTwoIcon"></span>
+        : <b class="playerOScore"></b>
+    </div>
+
+    <!-- Select versus Computer or Human -->
+    <div class="versus">
+        Versus Human or Computer? <br>
+        <button class="btn onePlayer">1 Player<br><img src="http://clipartmag.com/images/avengers-clipart-32.png" alt="Icon One"></button>
+        <button class="btn twoPlayer">2 Player<br><img src="https://cdn.iconscout.com/public/images/icon/free/png-512/ironman-marvel-super-hero-earth-saver-avenger-3ad45b4222080445-512x512.png" alt="Icon Two">
+            <img src="https://cdn.iconscout.com/public/images/icon/free/png-512/captain-america-marvel-superhero-earth-saver-avenger-3d11084006f3a960-512x512.png" alt="Icon Two">
+        </button>
+    </div>
+    
+    <!-- Player's choice area. Revealed initially, hidden while game in play, and display again on reset. -->
+    <div class="choice">
+        <div class="prompt">
+            Choose your side!
+        </div>
+        <button class="btn buttonX"></button>
+        <button class="btn buttonO"></button>
+    </div>
+    
+    <!-- Transparent underlay for game -->
+    <div class="view-area">
+    </div>
+
+    <!-- Winning notification (initially hidden) -->
+    <div class="winner">
+        <b class="winningPlayer"></b> Win!!!<br>
+        <button class="btn reset">Reset</button>
+    </div>
+
+    <!-- Tied game notification (initially hidden) -->
+    <div class="tiedGame">
+            <img class="tied-pic"src="https://thumbs.gfycat.com/HatefulDeterminedBarebirdbat-max-1mb.gif" alt="Tied Game Image">TIED!!<br>
+        <button class="btn reset">Reset</button>
+    </div>
+    
+    
+</body>
+</html>

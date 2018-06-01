@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("http://jllsly.com/wallpapers/xvideo-game-characters-wallpaper-high-definition-Is-Cool-Wallpapers.jpg.pagespeed.ic.1qeN4xDfDN.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Karla', sans-serif !important;
+    cursor: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRlvu4wfpVEFmLkOeN2Wmg85IFb0tMyX6O3WPL-wt1gqM7J5xn'), pointer;
+}
+.gameTable, .scores {
+    display: none;
+}
+.view-area {
+    background-color: rgb(236, 236, 236);
+    opacity: 0.8;
+    margin-top: 2   0px;
+    font-size: 2em;
+    width: 350px;
+    height: 435px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -175px;
+    z-index: -1;
+    border-radius: 10px;
+}
+.game-area {
+    position: absolute;
+    z-index: 0;
+    top: 50px;
+    left: 50%;
+    width: 320px;
+    margin-left: -160px;
+    text-align: center;
+    font-weight: bold;
+}
+table {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -150px;
+    font-size: 3.5em;
+    
+}
+td {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: middle;
+    cursor: url('https://cdn.iconscout.com/public/images/icon/free/png-512/ironman-marvel-super-hero-earth-saver-avenger-3ad45b4222080445-512x512.png'), auto;	
+    background-color: rgb(248, 248, 124);
+}
+table tr:first-child td {
+    border-top: none;
+}
+table tr:last-child td {
+    border-bottom: none;
+}
+table tr td:first-child {
+    border-left: none;
+}
+table tr td:last-child {
+    border-right: none;
+}
+.status {
+    position: relative;
+    top: 360px;
+    text-align: center;
+    font-size: 1.2em; 
+}
+.choice, .winner, .tiedGame, .versus {
+    position: absolute;
+    left:50%;
+    width: 250px;
+    margin-left: -125px;
+    margin-top: 90px;
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+    display: none;
+}
+.versus {
+    display: inline;
+}
+
+button {
+    width: 100px;
+    border: 1px solid white !important;
+    font-size: 1.1em;
+    padding: 2px;
+    background-color: rgb(174, 174, 255);
+}
+
+.activePlayer {
+    position: relative;
+    top: 50px;
+    right: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+.activePlayer img {
+    width: 25px;
+    height: 25px;
+}
+.scores {
+    position: absolute;
+    left: 50%;
+    top: 420px;
+    margin-left: -150px;
+    text-align: center;
+    font-size: 1.3em; 
+}
+
+h4 {
+    font-size: 1.5em; 
+    display: inline;
+    color: red !important;
+    font-weight: bold !important;;
+}
+.tiedGame {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.tied-pic {
+    width: 60px;
+    height: 60px;
+}
+button img, .scores img{
+    width: 35px;
+    height: 35px;
+}
+td {
+   background-size: contain;
+}
+.scores img, .status img, .winningPlayer img, .twoPlayer img {
+    width: 35px;
+    height: 35px;
+}
